@@ -15,7 +15,7 @@
 @font-face {
   font-family: 'Roboto';
   src: url('../Fonts/Roboto-Regular.woff2') format('woff2'),
-   url('../Fonts/Roboto-Regular.woff') format('woff');
+  url('../Fonts/Roboto-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -24,7 +24,7 @@
 @font-face {
   font-family: 'Roboto';
   src: url('../Fonts/Roboto-Medium.woff2') format('woff2'),
-   url('../Fonts/Roboto-Medium.woff') format('woff');
+  url('../Fonts/Roboto-Medium.woff') format('woff');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -33,7 +33,7 @@
 @font-face {
   font-family: 'Roboto';
   src: url('../Fonts/Roboto-Bold.woff2') format('woff2'),
-   url('../Fonts/Roboto-Bold.woff') format('woff');
+  url('../Fonts/Roboto-Bold.woff') format('woff');
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -87,18 +87,18 @@ img {
 }
 /* BUTTON  */
 .button {
-display: inline-block;
-padding: 16px 24px;
-border: 0;
-border-radius: 100px;
-font-size: 16px;
-line-height: normal;
-font-weight: 500;
-cursor: pointer;
-text-decoration: none;
-text-transform: uppercase;
-letter-spacing: 1px;
-white-space: nowrap;
+  display: inline-block;
+  padding: 16px 24px;
+  border: 0;
+  border-radius: 100px;
+  font-size: 16px;
+  line-height: normal;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  white-space: nowrap;
 }
 .button-brown {
   background-color: var(--accent-color-light-brown-80);
@@ -124,20 +124,20 @@ white-space: nowrap;
 
 /* MAIN-CONTENT */
 .main-content {
+  flex-grow: 1;
   padding-top: 20px;
   padding-bottom: 50px;
-  flex-grow: 1;
 }
-/* SITE-HEADER-INTRO-WRAPPER */
+/* SITE-footer-INTRO-WRAPPER */
 .site-heade-hero-wrapper {
   background-color: var(--light-brown);
-background-image: url(../img/light-bg.jpg);
+  background-image: url(../img/light-bg.jpg);
 }
 
-/* SITE-HEADER  */
+/* SITE-footer  */
 .site-header {
-padding-top: 40px;
-padding-bottom: 40px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 .site-heder-cotainer {
   display: flex;
@@ -182,8 +182,13 @@ padding-bottom: 40px;
   text-decoration: none;
   text-transform: uppercase;
   color: var(--text-color);
-white-space: nowrap;
+  white-space: nowrap;
 }
+.sitenav-medium-font .sitenav-link {
+  font-size: 16px;
+  line-height: normal;
+}
+
 .sitenav-link:hover {
   color: var(--accent-color-green);
 }
@@ -213,9 +218,9 @@ white-space: nowrap;
   color: #000;
 }
 .hero-text {
-margin: 0;
-font-size: 16px;
-line-height: 1.5;
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.5;
 }
 .hero-text:not(:last-child) {
   margin-bottom: 34px;
@@ -228,7 +233,7 @@ line-height: 1.5;
   object-fit: cover;
 }
 .hero-img-index {
-height: 696px;
+  height: 696px;
 }
 
 /* INDEX-COLLECTION*/
@@ -236,9 +241,9 @@ height: 696px;
   margin-bottom: 20px;
 }
 .index-ccollection-inner {
- padding: 50px 143px;
-background-color: var(--light-bg);
-background-image: url(../img/Rectangle\ 116.jpg);
+  padding: 50px 143px;
+  background-color: var(--light-bg);
+  background-image: url(../img/Rectangle\ 116.jpg);
 }
 .index-collection-headding {
   margin-top: 0;
@@ -278,8 +283,8 @@ background-image: url(../img/Rectangle\ 116.jpg);
   margin-bottom: 10px;
   font-size: 48px;
   line-height: normal;
-font-weight: 500;
-text-transform: uppercase;
+  font-weight: 500;
+  text-transform: uppercase;
 }
 .index-collection-text {
   margin: 0;
@@ -294,16 +299,16 @@ text-transform: uppercase;
   margin-bottom: 30px;
 }
 .index-feature-ineer {
- padding: 50px 30px;
+  padding: 50px 30px;
   background-image: url(../img/Index-feature-bg.jpg);
   background-repeat: no-repeat;
-background-size: 100% 700px;
+  background-size: 100% 700px;
 }
 .index-feature-heading {
   margin-top: 0;
   margin-bottom: 10px;
-font-size: 50px;
-line-height: normal;
+  font-size: 50px;
+  line-height: normal;
   color: #fff;
   text-transform: uppercase;
   text-align: center;
@@ -328,7 +333,7 @@ line-height: normal;
 .index-item-feature-item {
   width: calc(100% / 3 - 20px);
   margin-left: 20px;
-margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 .index-feature-img {
   width: 443px;
@@ -337,12 +342,12 @@ margin-bottom: 30px;
   object-fit: cover;
 }
 .index-feature-item-heading {
- margin-top: 0;
- margin-bottom: 10px;
- font-size: 30px;
- line-height: normal;
-font-weight: 500;
- text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 30px;
+  line-height: normal;
+  font-weight: 500;
+  text-transform: uppercase;
 }
 .index-feature-item-text {
   margin: 0;
@@ -423,8 +428,60 @@ font-weight: 500;
   color: #333333;
 }
 
+/* sITE-FOOTER*/
+.site-fotter {
+  padding-top: 65px;
+  padding-bottom: 65px;
+  background-color: var(--light-brown);
+  background-image: url(../img/light-bg.jpg);
+}
+.site-footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-footer-logo-link {
+  display: flex;
+}
+
+.site-footer-logo-link:hover {
+  opacity: 0.8;
+}
+.site-footer-logo-link:active {
+  opacity: 0.6;
+}
+
+.site-footer-logo-img {
+  flex-shrink: 0;
+  width: 235px;
+  line-height: 24px;
+  object-fit: contain;
+}
+/* COSIALS  */
+.cosials {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.cosials-item:not(:last-child) {
+  margin-right: 30px;
+}
+.socials-link {
+  display: flex;
+  color: #333;
+}
+.socials-link:hover {
+  background-color: var(--accent-color-green);
+}
+.socials-link:active {
+  opacity: 0.6;
+}
+
 .how-it-works-cta:focus {
-outline-color: var(--accent-color-light-brown);
+  outline-color: var(--accent-color-light-brown);
 }
 
 
@@ -438,14 +495,17 @@ only screen and (                min-resolution: 192dpi),
 only screen and (                min-resolution: 2dppx) {
   .site-heade-hero-wrapper {
     background-image: url(../img/light-bg@2x.jpg);
-    }
-    .index-ccollection-inner {
-      background-image: url(../img/Rectangle\ 116@2x.jpg.jpg);
-      }
-      .index-feature-ineer {
-        background-image: url(../img/Index-feature-bg@2x.jpg);
-      }
-      .how-it-works-inner {
-        background-image: url(../img/green-bg@2x.jpg);
-      }
+  }
+  .index-ccollection-inner {
+    background-image: url(../img/Rectangle\ 116@2x.jpg.jpg);
+  }
+  .index-feature-ineer {
+    background-image: url(../img/Index-feature-bg@2x.jpg);
+  }
+  .how-it-works-inner {
+    background-image: url(../img/green-bg@2x.jpg);
+  }
+  .site-fotter {
+    background-image: url(../img/light-bg@2x.jpg);
+  }
 }
