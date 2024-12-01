@@ -60,6 +60,7 @@ body {
   height: 100%;
   padding: 0;
   margin: 0;
+  overflow-x: hidden;
   font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
   line-height: 1.75;
@@ -228,10 +229,21 @@ img {
 
 
 .hero-img {
+  display: block;
   width: 710px;
   height: 596px;
   object-fit: cover;
 }
+.hero-img-wrapper {
+  position: relative;
+}
+.hero-bage {
+  position: absolute;
+  left: 0;transform: translate(-50%, -30%);
+  top: 0;
+
+}
+
 .hero-img-index {
   height: 696px;
 }
@@ -241,6 +253,7 @@ img {
   margin-bottom: 20px;
 }
 .index-ccollection-inner {
+  position: relative;
   padding: 50px 143px;
   background-color: var(--light-bg);
   background-image: url(../img/Rectangle\ 116.jpg);
@@ -294,6 +307,22 @@ img {
 .index-collection-text:not(:last-child) {
   margin-bottom: 10px;
 }
+.index-collection-flover-a {
+  position: absolute;
+  top: 40px;
+  left: -150px;
+}
+.index-collection-flover-b{
+  position: absolute;
+  right: -340px;
+  top: 685px;
+}
+.index-collection-flover-c{
+  position: absolute;
+  left: -210px;
+  bottom: 170px;
+}
+
 /* INDEX-FEATURE  */
 .index-feature {
   margin-bottom: 30px;
@@ -356,6 +385,7 @@ img {
 }
 /* HOW-IT-WORKS*/
 .how-it-works-inner {
+  position: relative;
   padding: 50px 30px;
   background-color: var(--accent-color-green);
   background-image: url(../img/green-bg.jpg);
@@ -381,6 +411,7 @@ img {
   counter-reset: how-it-works;
 }
 .how-it-works-item {
+  position: relative;
   display: flex;
   flex-direction: column;
   width: calc(100% / 3 - 20px);
@@ -388,6 +419,8 @@ img {
   counter-increment: how-it-works ;
 }
 .how-it-works-item::before {
+  position: relative;
+z-index: 2;
   width: 60px;
   height: 60px;
   border: 4px solid var(--accent-color-light-brown);
@@ -395,6 +428,21 @@ img {
   background-color: var(--light-bg);
   text-align: right;
   content: "";
+}
+
+.how-it-works-item::after {
+  position: absolute;
+left: 35px;
+top: 30px;
+width: 433px;
+height: 3px;
+background-image: url(../img/line.svg);
+background-repeat: no-repeat;
+  content: "";
+}
+
+.how-it-works-item:last-child:after {
+  display: none;
 }
 
 .how-it-works-info {
@@ -426,6 +474,12 @@ img {
   font-size: 18px;
   line-height: 28px;
   color: #333333;
+}
+
+.how-it-works-sticker {
+  position: absolute;
+  right: 68px;
+  top: 41px;
 }
 
 /* sITE-FOOTER*/
